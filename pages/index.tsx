@@ -18,9 +18,7 @@ export default function HomePage() {
           POVOTECH
         </Text>
       </Heading>
-      <Text color={"gray.600"} maxW={"3xl"}>
-        Mettre quelque chose de très intéressant ici
-      </Text>
+      <Image alt="Image de décoration" src={"/undraw_programming_re_kg9v.svg"} height={400} width={500} />
       <ServicesOverview />
       <Stack spacing={6} direction={"row"}>
         <Link href={"/contact"}>
