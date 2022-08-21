@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebook } from "react-icons/fa";
 import { ReactNode } from "react";
+import Link from "next/link";
 
 const SocialButton = ({
   children,
@@ -54,7 +55,7 @@ export const Footer = () => {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>© {year} PovoTech</Text>
+        <Text>© {year} PovoTech - <Link href={"/mentions-legales"}>Mentions légales</Link></Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton
             label={"Facebook"}
