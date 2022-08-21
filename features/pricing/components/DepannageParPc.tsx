@@ -58,11 +58,6 @@ const DepannageParPc = () => {
         <Stack p={5}>
           <Stack textAlign={"center"} alignItems={"center"}>
             <Heading size={"lg"}>Dépannage par PC</Heading>
-            <Text color={"gray.600"} maxW={"3xl"}>
-              Un diagnostic sans nécessité de démontage est gratuit. Toutefois,
-              le démontage de l&apos;ordinateur sera facturé 15€. Cette somme
-              sera déduite de la facture finale en cas de réparation.
-            </Text>
           </Stack>
         </Stack>
         <Divider />
