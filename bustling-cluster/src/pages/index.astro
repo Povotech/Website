@@ -1,43 +1,12 @@
 ---
+import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="PovoTech">
   <main>
     <section>
-      <div class="py-20">
-        <div
-          class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24"
-        >
-          <div
-            class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8"
-          >
-            <h1 class="text-3xl md:text-5xl p-2 tracking-loose">PovoTech</h1>
-            <p class="text-sm md:text-base mb-4">
-              Explore your favourite events and register now to showcase your
-              talent and win exciting prizes.
-            </p>
-            <a
-              href="#"
-              class="bg-transparent rounded shadow hover:shadow-lg py-2 px-4 border hover:border-transparent"
-            >
-              Rencontrons nous</a
-            >
-          </div>
-          <div
-            class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center"
-          >
-            <div class="h-48 flex flex-wrap content-center">
-              <div>
-                <img
-                  class="inline-block mt-28 hidden xl:block"
-                  src="./hero_section.svg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection />
     </section>
   </main>
 </Layout>
