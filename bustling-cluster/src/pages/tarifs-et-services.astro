@@ -1,5 +1,12 @@
 ---
+import DepannageTableauPrix from "../features/depannage-pc/DepannageTableauPrix.astro";
+import PrestationsGrille from "../features/prestations/PrestationsGrille.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="PovoTech" />
+<Layout title="PovoTech">
+  <div class="pt-10 flex flex-col gap-5 pb-10">
+    <DepannageTableauPrix />
+    <PrestationsGrille />
+  </div>
+</Layout>

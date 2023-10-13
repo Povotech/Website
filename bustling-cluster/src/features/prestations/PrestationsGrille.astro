@@ -1,0 +1,66 @@
+---
+import PrestationItem from "./PrestationItem.astro";
+---
+
+<section class="flex flex-col items-center gap-3 px-5">
+  <h1 class="text-3xl">Prestations</h1>
+  <p class="text-gray-500 text-center">
+    Un diagnostic sans nécessité de démontage est gratuit.<br />
+     Toutefois, le démontage de l'ordinateur sera facturé 15€. Cette somme sera
+    déduite de la facture finale en cas de réparation.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl pt-6">
+    <PrestationItem
+      iconName="uil:cloud-redo"
+      title="Réinstallation complète de l'OS"
+      price="35€ / Heure / PC"
+      services={[
+        "Formatage ( suppression des données du disque dur )",
+        "Installation de Windows et activation avec mises à jour ( Licence non incluse )",
+        "Installation des Logiciels de base",
+        "Sauvegarde & restauration des données utilisateur sur le nouveau système",
+        "Optimisation du système",
+        "Création de Backup Système",
+      ]}
+    />
+    <PrestationItem
+      iconName="uil:cloud-unlock"
+      title="Création de Backup Système"
+      price="35€ / PC"
+      services={[
+        "Création d'une sauvegarde de votre système que vous pourrez vous même restaurer.",
+      ]}
+    />
+    <PrestationItem
+      iconName="uil:bug"
+      title="Nettoyage PC Software ou Hardware"
+      price="30€ / Heure / PC"
+      services={[
+        "Nettoyage Logiciel après contamination par un virus",
+        "Nettoyage Physique poussière changement de pâte thermique ,ect..",
+      ]}
+    />
+    <PrestationItem
+      iconName="simple-icons:playstation4"
+      title="Entretien PS4"
+      price="40€"
+      services={["Forfait nettoyage poussière et changement pâte thermique"]}
+    />
+    <PrestationItem
+      iconName="uil:mouse"
+      title="Installation/Configuration d'un périphérique / Réseau domestique"
+      price="25€ / Heure / PC"
+      services={[
+        "Nouveau périphérique ? Nouveau composant ? je vous fait l'installation la mise à jour et la configuration !",
+      ]}
+    />
+    <PrestationItem
+      iconName="uil:desktop"
+      title="Montage PC"
+      price="70€ / PC"
+      services={[
+        "Comprends uniquement la main d’œuvre , composants non compris",
+      ]}
+    />
+  </div>
+</section>
