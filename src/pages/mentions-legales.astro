@@ -1,0 +1,48 @@
+---
+import LegalChapter from "../components/LegalChapter.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="PovoTech - Mentions légales">
+  <section class="leading-relaxed text-justify p-2">
+    <h1 class="text-2xl">Mentions légales</h1>
+    <p>
+      Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour
+      la confiance en l'économie numérique, il est précisé aux utilisateurs du
+      site Bellezza di Em l'identité des différents intervenants dans le cadre
+      de sa réalisation et de son suivi.
+    </p>
+    <div class="flex-col space-y-4 mt-4">
+      <LegalChapter title="Édition du site">
+        <p>
+          Le présent site, accessible à l’URL www.povotech.fr (le « Site »), est
+          édité par : Pierre BOUHA, résidant Hameau de Nivallela, 20137
+          PORTO-VECCHIO, de nationalité Française (France), né le 24/11/1992.
+        </p>
+      </LegalChapter>
+      <LegalChapter title="Hébergement">
+        <p>
+          Le Site est hébergé par la société Netlify, Inc, situé 512 2nd Street,
+          Suite 200 San Francisco, CA 94103, (contact téléphonique ou email :
+          +18448997312).
+        </p>
+      </LegalChapter>
+      <LegalChapter title="Directeur de publication">
+        <p>Directeur de la publication du Site est Pierre BOUHA.</p>
+      </LegalChapter>
+      <LegalChapter title="Nous contacter">
+        <ul class="list-inside list-disc">
+          <li>Par téléphone : <a href="tel:0684175599">06.84.17.55.99</a></li>
+          <li>
+            Par email : <a href="mailto:contact@povotech.fr"
+              >contact@povotech.fr</a
+            >
+          </li>
+          <li>
+            Par courrier : PovoTech - Hameau de Nivallela, 20137 PORTO-VECCHIO
+          </li>
+        </ul>
+      </LegalChapter>
+    </div>
+  </section>
+</Layout>

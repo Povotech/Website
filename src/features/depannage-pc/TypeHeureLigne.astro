@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  price: string;
+  hours: string[];
+}
+
+const { title, price, hours } = Astro.props;
+---
+
+<section
+  class="grid max-md:grid-rows-3 md:grid-cols-3 items-center text-center gap-5 md:gap-40 py-10"
+>
+  <h1 class="text-xl font-semibold">{title}</h1>
+  <ul class="list-disc text-justify leading-relaxed text-gray-600">
+    {hours.map((hour) => <li>{hour}</li>)}
+  </ul>
+  <span class="font-semibold text-regal-blue-800">{price}</span>
+</section>

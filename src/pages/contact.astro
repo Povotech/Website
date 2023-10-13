@@ -1,0 +1,55 @@
+---
+import ContactItem from "../features/contact/ContactItem.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="PovoTech">
+  <div class="flex flex-col items-center gap-5 py-10">
+    <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
+      <ContactItem
+        iconName="uil:phone"
+        content="06.84.17.55.99"
+        link="tel:0684175599"
+      />
+      <ContactItem
+        iconName="uil:envelope"
+        content="contact@povotech.fr"
+        link="mailto:contact@povotech.fr"
+      />
+      <ContactItem
+        iconName="uil:facebook"
+        content="povotech2a"
+        link="https://www.facebook.com/povotech2a"
+      />
+      <ContactItem
+        iconName="uil:instagram"
+        content="povotech2a"
+        link="https://www.instagram.com/povotech2a"
+      />
+    </div>
+    <h1 class="text-5xl font-semibold">Où nous trouvez ?</h1>
+    <p class="leading-relaxed text-neutral-500 text-center">
+      Pas besoin de nous chercher !<br />
+       Notre entreprise ne possède pas de boutique ou de bureau. <br />
+       En cas de panne, veuillez nous contacter au travers des moyens ci-dessus.<br
+      />
+       Nous nous déplaçons à votre domicile si cela est nécessaire vous n'avez
+      rien à faire !
+    </p>
+    <p
+      class="italic font-extralight leading-relaxed text-neutral-500 text-center"
+    >
+      Nous travaillons exclusivement sur la région de Porto-Vecchio.<br />
+       Au-delà des frais de déplacement supplémentaire sont a prévoir si le
+      déplacement est indispensable.
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190904.15361808057!2d9.198812685156232!3d41.61516275167215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d9817d1d6c1b49%3A0xf5d933eab47ea5c6!2s20137%20Porto-Vecchio!5e0!3m2!1sfr!2sfr!4v1697235329595!5m2!1sfr!2sfr"
+      width="800"
+      height="600"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</Layout>

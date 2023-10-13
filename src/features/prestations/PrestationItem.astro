@@ -1,0 +1,23 @@
+---
+import Icon from "astro-icon";
+
+interface Props {
+  iconName: string;
+  title: string;
+  price: string;
+  services: string[];
+}
+
+const { iconName, title, price, services } = Astro.props;
+---
+
+<article class="flex flex-col gap-3">
+  <div class="mx-auto">
+    <Icon name={iconName} size={50} />
+  </div>
+  <h2 class="font-semibold">{title}</h2>
+  <h3 class="text-lg text-regal-blue-800 font-bold">{price}</h3>
+  <ul class="list-disc leading-relaxed list-outside text-sm text-gray-600">
+    {services.map((service) => <li>{service}</li>)}
+  </ul>
+</article>
